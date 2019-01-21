@@ -19,7 +19,6 @@ anadirPizza = this.anadirPizza.bind(this);
   anadirPizza(p){
     let arrayPizzas=this.state.pizzas;
     arrayPizzas.push(p);  
-    console.log(arrayPizzas);
     this.setState({ pizzas: arrayPizzas})
   }
   
