@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './carrito.css'
 var precio=0;
 
 export class Carrito extends Component {

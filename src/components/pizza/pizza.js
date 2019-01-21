@@ -19,7 +19,6 @@ const Pizza = (props) => (
                     <option value="Mediano">Mediano</option> 
                     <option value="Grande">Grande</option> 
                   </select>
-                 
                   <button onClick={()=>{
                     e.tamano=document.getElementById("tamanio").value;
                     props.anadir(e);
