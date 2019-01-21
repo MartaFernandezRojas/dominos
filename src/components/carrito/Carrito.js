@@ -23,7 +23,7 @@ return(
                   {this.state.pizzas.map(e=>{
                     precio=parseInt(e.precio);
                     total=total+precio;
-                    return <p>{e.name}-{e.precio}€</p>
+                    return <p>{e.name}-{e.tamano}-{e.precio}€</p>
                   })}
                   <p>Total Pedido:{total} €</p>
               </div>

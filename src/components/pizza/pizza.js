@@ -15,7 +15,15 @@ const Pizza = (props) => (
                   <h5 className="card-title">{e.name}</h5>
                   <h5>{e.precio}€</h5>
                   <p className="card-text">{e.info}</p>
-                  <button onClick={()=>props.anadir(e)} className="btn btn-primary">
+                  <select name="OS" id="tamanio">
+                    <option value="Mediano">Mediano</option> 
+                    <option value="Grande">Grande</option> 
+                  </select>
+                 
+                  <button onClick={()=>{
+                    e.tamano=document.getElementById("tamanio").value;
+                    props.anadir(e);
+                    }} className="btn btn-primary">
                     Comprar
                   </button>
                 </div>
