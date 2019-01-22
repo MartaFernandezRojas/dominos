@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Bootstrap/bootstrap.css';
 import './App.css';
-import Navbar from './components/navbar/navbar';
 import Main from './components/main/main';
 import Logo from './components/logo/logo';
 import Carrito from './components/carrito/Carrito';
@@ -29,7 +28,6 @@ anadirPizza = this.anadirPizza.bind(this);
         <Carrito arrayPizzas={this.state.pizzas}/>
         <Logo/>
         <Main anadir={this.anadirPizza} />
-  
         </header>
       </div>
     );
