@@ -27,10 +27,13 @@ export class Carrito extends Component {
                     <div>
                       {this.state.pizzas.map(e => {
                       precio = parseInt(e.precio);
+                      if(e.tamano=="Grande"){
+                        precio=precio*2;
+                      }
                       total = total + precio;
                         return (
                           <p>
-                            {e.name}-{e.tamano}-{e.precio}€
+                            {e.name}-{e.tamano}-{precio}€
                           </p>
                         );
                       })}

@@ -2,10 +2,26 @@ import React from "react";
 import pizza from "../../pizzas.json";
 import "./pizza.css";
 
+function atugusto(name){
+ 
+    if (name=="A tu gusto"){
+     return (<div><select name="OS" id="2">
+      <option value="elige">Elige Ingrediente</option> 
+     <option value="Pollo">Pollo</option> 
+     <option value="Cebolla">Cebolla</option> 
+     <option value="Pimiento">Pimiento</option>
+   </select><button> ingrediente</button></div>)
+   
+    }
+
+}
+
 const Pizza = (props) => (
     <div className="row">
         {pizza.map((e, index) => {
           let idd = `tamanio${index}`;
+          let idd2 = `ingrediente${index}`;
+        
           return (
             <div className="col-l3">
               <div className="card card-hover" style={{ width: "18rem" }}>
@@ -18,8 +34,8 @@ const Pizza = (props) => (
                     <option value="Mediano">Mediano</option> 
                     <option value="Grande">Grande</option> 
                   </select>
+                  {atugusto(e.name)}
                   <button onClick={()=>{
-                    console.log(document.getElementById(idd).value);
                     e.tamano=document.getElementById(idd).value;
                     props.anadir(e);
                     }} className="btn btn-primary">
