@@ -1,0 +1,12 @@
+a{
+    color:grey;
+}
+p{
+    font-size:20px;
+}
+
+.navbar1{
+   background-color: rgba(240, 194, 41, 0.89);
+   display: flex;
+   justify-content: end;
+}
