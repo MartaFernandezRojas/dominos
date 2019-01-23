@@ -11,9 +11,7 @@ function atugusto(name){
      <option value="Cebolla">Cebolla</option> 
      <option value="Pimiento">Pimiento</option>
    </select><button> ingrediente</button></div>)
-   
     }
-
 }
 
 const Pizza = (props) => (
