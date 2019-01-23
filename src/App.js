@@ -20,6 +20,8 @@ anadirPizza = this.anadirPizza.bind(this);
     arrayPizzas.push(p);  
     this.setState({ pizzas: arrayPizzas})
   }
+
+
   
   render() {
     return (

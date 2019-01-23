@@ -5,7 +5,7 @@ const Main = (props) => (
   <div className="container">
     <div className="row">
       <h1>Tienda de pizzas</h1>
-      <Pizza anadir={props.anadir}/>
+      <Pizza anadir={props.anadir} />
     </div>
   </div>
 );

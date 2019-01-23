@@ -15,7 +15,7 @@ export class Carrito extends Component {
       <div className="container-fluid navbar1">
         <div className="row">
           <div className="col-l12">
-          <nav className="navbar navbar-expand-lg  bg-light">
+          <nav className="navbar navbar-expand-lg">
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
               <ul className="navbar-nav">
                 <li className="nav-item dropdown">
@@ -33,7 +33,8 @@ export class Carrito extends Component {
                       total = total + precio;
                         return (
                           <p>
-                            {e.name}-{e.tamano}-{precio}€
+                            {e.name}-{e.tamano}-{precio}€ -
+                            {e.arrayIngrediente}
                           </p>
                         );
                       })}
